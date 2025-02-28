@@ -1,14 +1,24 @@
-/* HTML СТРАНИЦА ЛИЧНАЯ (Портфолио) */
+/* CSS СТРАНИЦА БЛОГА */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #f9f9f9;
   color: #333;
-  text-align: center;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
 }
 
-header img {
-  width: 150px;
-  border-radius: 50%;
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.profile {
+  margin-bottom: 5px; 
 }
 
 .profile-photo {
@@ -19,24 +29,25 @@ header img {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.project {
-  margin: 20px;
-  padding: 10px;
+article {
   background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.project img{
-    max-width: 100%;
-    max-height: 80%;
-    border-radius: 8px;
+article img {
+  max-width: 100%;
+  max-height: 80%;
+  border-radius: 8px;
 }
+
 footer {
-  margin-top: -20px;
+  text-align: center;
+  margin-top: 0px;
   font-size: 0.9em;
   color: #777;
-  text-align: center;
 }
 
 .social-links {
@@ -56,4 +67,9 @@ footer {
 
 .social-links img:hover {
   transform: scale(1.1);
+}
+
+.fact-button-container {
+  text-align: center;
+  margin: 20px 0;
 }
